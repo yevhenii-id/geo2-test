@@ -25,18 +25,19 @@ jobs:
 
       - name: Export Confluence to Markdown
         env:
-          ATLASSIAN_URL: 'https://geo2.atlassian.net'
-          ATLASSIAN_USERNAME: ${{ secrets.CONFLUENCE_USER }}
-          ATLASSIAN_API_TOKEN: ${{ secrets.CONFLUENCE_TOKEN }}
-          SPACE_KEY: 'BALDEVGEO'
-          OUTPUT_DIR: './docs'
+          CONFLUENCE_USER: ${{ secrets.CONFLUENCE_USER }}
+          CONFLUENCE_TOKEN: ${{ secrets.CONFLUENCE_TOKEN }}
         run: |
-          # 1. Ensure output directory exists (the tool might expect it)
-          mkdir -p "$OUTPUT_DIR"
+          # Create .env file for the exporter to read
+          echo "ATLASSIAN_URL=https://geo2.atlassian.net" > .env
+          echo "ATLASSIAN_USERNAME=$CONFLUENCE_USER" >> .env
+          echo "ATLASSIAN_API_TOKEN=$CONFLUENCE_TOKEN" >> .env
           
-          # 2. Run the exporter
-          # Usage: confluence-markdown-exporter spaces <SPACE_KEY> <OUTPUT_PATH>
-          confluence-markdown-exporter spaces "$SPACE_KEY" "$OUTPUT_DIR"
+          # Ensure output directory exists
+          mkdir -p ./docs
+          
+          # Run the exporter
+          confluence-markdown-exporter spaces "BALDEVGEO" "./"
 
       - name: Commit and Push changes
         run: |
