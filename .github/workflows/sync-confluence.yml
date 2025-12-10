@@ -48,7 +48,7 @@ jobs:
           
           # Run the exporter with custom config path
           export CME_CONFIG_PATH=$(pwd)/config.json
-          confluence-markdown-exporter spaces "BALDEVGEO" "./docs"
+          confluence-markdown-exporter spaces "BALDEVGEO" ./docs
           
           # Cleanup config file to avoid leaking secrets (though runner cleans up anyway)
           rm config.json
