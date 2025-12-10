@@ -10,7 +10,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Export Confluence to Markdown
-        uses: Spenhouet/confluence-markdown-exporter@v1 # Або інший готовий action/скрипт
+        uses: Spenhouet/confluence-markdown-exporter
         with:
           confluence_url: 'https://geo2.atlassian.net'
           confluence_user: ${{ secrets.CONFLUENCE_USER }}
