@@ -25,17 +25,18 @@ jobs:
 
       - name: Export Confluence to Markdown
         env:
-          CONFLUENCE_URL: 'https://geo2.atlassian.net'
-          CONFLUENCE_USER: ${{ secrets.CONFLUENCE_USER }}
-          CONFLUENCE_TOKEN: ${{ secrets.CONFLUENCE_TOKEN }}
+          ATLASSIAN_URL: 'https://geo2.atlassian.net'
+          ATLASSIAN_USERNAME: ${{ secrets.CONFLUENCE_USER }}
+          ATLASSIAN_API_TOKEN: ${{ secrets.CONFLUENCE_TOKEN }}
           SPACE_KEY: 'BALDEVGEO'
           OUTPUT_DIR: './docs'
         run: |
-          # The tool takes arguments as: confluence-markdown-exporter [options] content_id_or_space_key output_path
-          # Note: The command name might vary depending on the package, usually it's `confluence-markdown-exporter` or `cf-export`
-          # Verifying the command from the PyPI documentation: `confluence-markdown-exporter`
+          # 1. Ensure output directory exists (the tool might expect it)
+          mkdir -p "$OUTPUT_DIR"
           
-          confluence-markdown-exporter --url "$CONFLUENCE_URL" --user "$CONFLUENCE_USER" --token "$CONFLUENCE_TOKEN" "$SPACE_KEY" "$OUTPUT_DIR"
+          # 2. Run the exporter
+          # Usage: confluence-markdown-exporter spaces <SPACE_KEY> <OUTPUT_PATH>
+          confluence-markdown-exporter spaces "$SPACE_KEY" "$OUTPUT_DIR"
 
       - name: Commit and Push changes
         run: |
