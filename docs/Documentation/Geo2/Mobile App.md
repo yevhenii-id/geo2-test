@@ -15,7 +15,7 @@ You can download the mobile app from [**App Store**](https://apps.apple.com/app/
 - [Mobile App: Register](Mobile%20App/Mobile%20App_%20Register.md)
 - [Mobile App: Sign In](Mobile%20App/Mobile%20App_%20Sign%20In.md)
 - [Mobile App: Permissions](Mobile%20App/Mobile%20App_%20Permissions.md)
-- [Mobile App: Home](Mobile%20App/Mobile%20App_%20Home.md)
+- [Mobile App: Map](Mobile%20App/Mobile%20App_%20Map.md)
 - [Mobile App: Routes and Orders](Mobile%20App/Mobile%20App_%20Routes%20and%20Orders.md)
 - [Mobile App: POD - Proof of Delivery](Mobile%20App/Mobile%20App_%20POD%20-%20Proof%20of%20Delivery.md)
 - [Mobile App:  POD History](Mobile%20App/Mobile%20App_%20%20POD%20History.md)
