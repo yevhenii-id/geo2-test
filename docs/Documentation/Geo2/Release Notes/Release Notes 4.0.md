@@ -11,7 +11,7 @@ Mobile app:
 
 Hub / API:
 
-2025-12-23
+2025-12-29
 
 # New Features
 

@@ -25,7 +25,7 @@ Although core features remain available, some functions require an active connec
 
 - Geo-coding for route start and end points, stops, and address search will not work.
 - As geo-coordinates cannot be fetched without an internet connection, addresses cannot be positioned accurately on the map.
-- You can still enter an address manually using `Can’t find address…` button but automatic address search will not work.
+- You can still enter an address manually using `Can’t find address...` button but automatic address search will not work.
 
   - The address entered manually will be saved.
   - The map marker may not display in the correct location due to missing geo-location.

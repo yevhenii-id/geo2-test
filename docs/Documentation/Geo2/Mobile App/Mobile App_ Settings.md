@@ -29,19 +29,21 @@ Examples:
 - A holding company (organization) with smaller companies (environments) working in different spheres.
 - A middle-size company (organization) with several depots (environments).
 
-As a Free level user, you will have only 1 environment. If you want to use more environments for different purposes, **upgrade to Enterprise**.
+As a Free level user, you will have only 1 environment. If you want to use more environments for different purposes, [**upgrade to Enterprise in Geo2 Hub**](https://hub.geo2.com/en-GB/auth/signin).
 
 # Routes Settings
 
 In the Routes settings, you can select whether distance, length, or weight is shown in metric or imperial units, set default stop duration and route start time, add vehicles, enable vehicle checks on route start and end, and update failure reason codes for POD’s.
 
-![Settings page 011.png](../../attachments/cbfa341a-5761-4c34-93eb-8ab1ac20a721.png)
+![App 242.png](../../attachments/df6245e8-0e37-4fbe-a00d-777f8ba327c8.png)![App 241.png](../../attachments/f6dba286-5eb4-45c6-82e4-8394022b2140.png)
 
 ## Stop Duration
 
 Stop duration means the default amount of time the delivery vehicle is expected to remain at a route stop.  This is used when orders are first brought into a route and, together with drive times, stop durations are intended to lead to route durations that are more realistic than if only drive time was considered.
 
-Once a new organization is created, by default, the stop duration is set to 5 minutes. You can click on the setting to put your custom duration. Press `Update` to save changes.
+Once a new organization is created, by default, the stop duration is set to 5 minutes. You can click on the setting to put your custom duration. Press `Confirm` to save changes.
+
+![App 243.png](../../attachments/9570c2e0-f440-4a26-9244-ca6547067fb1.png)![App 244.png](../../attachments/aa5e3725-547b-4c97-a8ac-6355635965d4.png)![App 245.png](../../attachments/8527a805-186c-40dd-9cec-846d4762a7fc.png)
 
 ## Start Time
 
@@ -49,7 +51,7 @@ The setting means the default route start time, i.e. the time when a vehicle set
 
 Once a new organization is created, by default, the start time is set to 08:00. You can click on the setting to add your custom start time. Press `Update` to save changes.
 
-![Settings page 012.png](../../attachments/0841a359-3474-4e03-b279-d4c93a106abe.png)![Settings page 013.png](../../attachments/f2958d9e-d078-4410-aa27-32c8b70c4cfe.png)![Settings page 014.png](../../attachments/e0807794-9967-4865-b40a-9b1d29f677f5.png)
+![App 246.png](../../attachments/f34fe66b-8e08-4e12-a749-e2d4d48ca65b.png)![App 247.png](../../attachments/883cfb30-5e8e-4782-893e-ca9a4b44e16d.png)![App 248.png](../../attachments/87dade58-fc8b-4446-9e71-72538c568551.png)
 
 ## Vehicles
 
@@ -57,7 +59,7 @@ Vehicles are assigned to deliver routes with orders.  You can add vehicles eith
 
 By pressing the `Add vehicle` button in the app, you will see the dialog to fill in the information.  Required fields are Key and Type.  All other fields are optional. By pressing the `Measures` button, you will see additional fields like Gross weight, Height, Width, and Length.
 
-![Settings page 008.png](../../attachments/6e255fef-30bc-4d58-8cf9-e202eeacff6a.png)![Settings page 009.png](../../attachments/8d0ae008-5aa4-4efe-9586-4b2bb199e4c0.png)![Settings page 015.png](../../attachments/67517e09-3d5d-494f-8fd5-0f1d7726da82.png)
+![App 249.png](../../attachments/ced9903d-6d4c-401f-8756-a093a82a3d05.png)![App 250.png](../../attachments/a43b588e-5fb4-4e5c-95aa-fb5ca4116da7.png)![App 251.png](../../attachments/74411b46-6fa5-4344-a958-05de7d166244.png)
 
 The properties of each vehicle are:
 
@@ -71,9 +73,9 @@ The properties of each vehicle are:
 | Width            | Number to specify the maximum vehicle width based on the length units in Routes → Length unit, for example, 9. This is considered for route optimization and calibration with vehicle restrictions. <br/> For metric environment settings (cm), the value is in metres. <br/> For imperial environment settings (in), the value is in feet.               | No                |
 | Length           | Number to specify the maximum vehicle length based on the length units specified in Routes → Length unit, for example, 9. This is considered for route optimization and calibration with vehicle restrictions. <br/> For metric environment settings (cm), the value is in metres. <br/> For imperial environment settings (in), the value is in feet.    | No                |
 
-Once information is provided, press the `Add` button to save changes.  You can edit vehicle properties by clicking on it.  Remember to press the `Save` button to save changes.
+Once information is provided, press the `Add` button to save changes.  You can edit vehicle properties by clicking on it.  Remember to press the `Update` button to save changes.
 
-![Settings page 016.png](../../attachments/dce7bb37-e816-4dc8-879d-5eb5b816570e.png)![Settings page 017.png](../../attachments/2b4ad9a9-f393-44a6-9f3d-0a1737336f00.png)![Settings page 018.png](../../attachments/905c724c-1ced-4c36-adff-8f8e38977ac1.png)
+![App 252.png](../../attachments/84c33920-10cd-4193-b716-49013939f372.png)![App 253.png](../../attachments/734e286d-e93f-460f-a7a6-8034b1912221.png)
 
 You can select a vehicle to `Delete` it.  For data integrity, it is best to not delete a vehicle once it has started to be used.
 
@@ -85,21 +87,23 @@ You can activate vehicle check in the mobile app when the route is being started
 
 Failure reason codes let you classify reasons for failed deliveries/collections and are available in the mobile app when recording a POD.  Once an environment is created, the first 8 default failure reason codes are added automatically.  Thus, you can create a proof of delivery in the mobile app in a failed or partially successful status.
 
-![Settings page 019.png](../../attachments/b576f67a-9296-4aa5-8d1e-4e91428b4b54.png)
+![App 254.png](../../attachments/36eb5019-cb87-4a2c-a22c-85b0b68a42bb.png)
 
-To add a failure reason code, press the `Add reason code` button.  A prompt will be shown to specify the details of the new failure reason code.  Both fields are required.  The Reason code field value will be displayed to recipients then on public POD page and POD PDF. The Description field is for internal usage only. To save changes, press the `Update` button.
+To add a failure reason code, press the `Add reason code` button.  A prompt will be shown to specify the details of the new failure reason code.  Both fields are required.  The Reason code field value will be displayed to recipients then on public POD page and POD PDF. The Description field is for internal usage only. To save changes, press the `Add` button.
 
-![Settings page 020.png](../../attachments/ed0941ba-bd29-4317-948b-8ea12f897191.png)
+![App 255.png](../../attachments/791401dd-f245-4833-9836-d1d2b9ec3ced.png)
 
 To edit a reason code, click on it.   Remember to press the `Update` button to save any changes.
 
-![Settings page 021.png](../../attachments/7cd18871-011a-424e-bcc1-d687c3dd4ba8.png)
+![App 256.png](../../attachments/fba02ec2-9741-41bb-84cc-2d601e468417.png)
 
 You can select a reason code to `Delete` it.  For data integrity, it is best to not delete a reason code once it has started to be used. It is not possible to delete all reason codes as it will impact a POD creation. Your environment needs at least 1 added failure reason code.
 
 # Recipient Notifications Settings
 
 A recipient can be sent emails with a link to track an order delivery progress and an order POD.
+
+![App 257.png](../../attachments/9f895593-7d69-4d69-aa74-e159c498a415.png)
 
 ## POD Notifications
 
@@ -117,7 +121,7 @@ Here are the configurable settings in the app:
 
 Once all information is provided, click the `Update` button to save changes.
 
-![Settings page 022.png](../../attachments/884f59be-330f-4800-96d2-36ab84d9edd6.png)![Settings page 023.png](../../attachments/e6d0f1c4-fa53-4763-ab5b-77f13ac3155c.png)![Settings page 024.png](../../attachments/edea4e77-584f-4b65-b099-92d88581d2e1.png)
+![App 258.png](../../attachments/484976d5-bd04-4eb6-b294-78ed40587503.png)![App 259.png](../../attachments/2df722a7-5cce-4d18-b28c-61482fc51c33.png)
 
 Once a POD is created and an order has a recipient email address, the POD notification email will be sent (if it was enabled in Settings).
 
@@ -138,35 +142,33 @@ Here are the configurable settings in the app:
 
 Once the route status changes to the configured value (e.g. In Transit), an email notification with a public tracking link will be sent to the recipient's email address.  For this to work, it is important that the recipient’s contact details (email address and mobile phone number) are specified in the order.
 
-![Settings page 025.png](../../attachments/da92b016-1473-4107-8a86-24203bc18660.png)![Settings page 026.png](../../attachments/3452123e-52fb-4967-91ea-0d10db38456a.png)
+![App 260.png](../../attachments/419c7a6d-ca87-427a-99da-30c9bb00e13d.png)![App 261.png](../../attachments/6594298a-cd40-45bf-aa8f-23ce116f8912.png)![App 262.png](../../attachments/68dc528e-3bb4-4ef4-8f90-f5936886c2d7.png)![App 263.png](../../attachments/1f72adc7-b3a0-44b4-b4d7-e8c1997303bd.png)
 
 # Users Settings
 
-If you are on a Free subscription level, you will see only your user.
+If you are on a Free subscription level, you will see only your user. It is possible to add new users to the current subscription level in [**Geo2 Hub**](https://hub.geo2.com/en-GB/auth/signin), for example, for seasonal workers if you are on Advanced or Enterprise subscription level.  If you are on Advanced level, you can add up to 10 users to your organization in total. If you are on Enterprise level, you are not limited in the number of users. You can press the  `Add users` button, [Hub: Organization Settings](../Web-Based%20Hub/Hub_%20Organization%20Settings.md), and proceed with payment.
 
-![Settings page 030.png](../../attachments/c71436e3-42fc-44a0-9fd6-6b5f7972af4f.png)
+![App 265.png](../../attachments/2cd4fc25-9c11-4f78-8125-d490497a9250.png)
 
 If you are on Advanced or Enterprise level, you can invite other users to your organization.  You can invite them either one-by-one, by pressing the `Invite user` button, or all at once, by pressing the `Import` button in Geo2 Hub.
 
+![App 264.png](../../attachments/897a01cd-23e1-4239-8c16-da5923beaf9d.png)
+
 By press `Invite user`, you will see the dialog prompting you for an email address, full name, role and subscription.  Make sure the email address used is valid and can receive incoming messages.  Instructions for the invited user are in the invitation email message and [Hub: Accept Invitation](../Web-Based%20Hub/Hub_%20Accept%20Invitation.md).
 
-![Settings page 028.png](../../attachments/c862ec76-9c68-4fc1-96be-6f8da201b954.png)
+![App 266.png](../../attachments/eb30d6d3-8e8d-4de9-ad0d-b6fc1836118c.png)
 
 The properties of each user are:
 
 |  **Property**                 |  **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |:------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Email                         | The email address must be in a valid email format - recipient@domain\_name.domain\_suffix. For example, [john.doe@gmail.com.](mailto:janedoe@gmail.com)                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Email                         | The email address must be in a valid email format - [recipient@domain\_name.domain\_suffix.](#recipient-domain-name-domain-suffix) For example, [john.doe@gmail.com.](mailto:janedoe@gmail.com)                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Full name                     | For example, Driver John Doe.  It is used for displaying users for route assignment, POD, and vehicle check creation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Organization/environment role | Role is a set of permissions for the user in the organization/environment.  Each user can either have the role of User, which does not enable them to modify the organization and environment (including route and order creation), or Admin, which gives them control over the organization and environment.  For organization and environment user roles and their permissions, see [**User Roles**](https://balloonone.atlassian.net/wiki/x/L4D_Ag#Organization-Roles). In the mobile app, you can select either User or Admin role that will be applied both to your organization and environment. |
 
 **To enable the use of the Geo2 product, an Organization Admin needs to assign a subscription to a newly invited user.**The message at the top of the `Users` page informs you about your current organization subscription.
 
-![Settings page 031.png](../../attachments/737d0639-c9ed-4333-a4fd-ef4b420035dd.png)
-
 By pressing on a user, you can edit their role and subscription. Remember to press the `Update` button to save changes.
-
-![Settings page 032.png](../../attachments/df18598f-5ec7-4619-9c71-62ba5b190bb6.png)
 
 If you want to delete a user from your organization, press the `Delete` button. This user will lose access to your organization.
 
@@ -178,9 +180,8 @@ There are further options that customise the behaviour of the app:
 
 - Barcode sound - select the sound that confirms the scanning of a barcode.
 - Photo resolution - select the resolution of photos taken by the app - higher resolution produces higher quality but also increases the amount of network data that will be used to sync the photos.
-- Appearance - select the theme for the mobile app - system, light or dark.
 
-![Settings page 033.png](../../attachments/2ba5b450-7440-4565-acd3-3d76df9c90bc.png)
+![App 267.png](../../attachments/69dc7e65-d555-4c90-9cb6-e4a1ea2f277b.png)
 
 # Account Settings
 
@@ -189,6 +190,6 @@ Here you can find the next information:
 - Contact Support - to report the issue, ask a question about Geo2, or leave your feedback to improve the product.
 - Privacy Policy and Terms of Service.
 
-To remove your account data, please click on the Delete my account data button and confirm the action.
+To remove your account data, please click on the `Delete account` button and confirm the action.
 
-![Settings page 033.png](../../attachments/2ba5b450-7440-4565-acd3-3d76df9c90bc.png)
+![App 268.png](../../attachments/cdceb433-bdf6-4a42-ab27-b60fb440224b.png)
