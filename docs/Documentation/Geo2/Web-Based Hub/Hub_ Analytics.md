@@ -29,7 +29,7 @@
 
 # Introduction
 
-The Dashboard is the first page you see after you successfully sign in.  You can get back to this via the Geo2 logo at the top-left of each page.
+The Dashboard is the first page you see after you successfully sign in.  You can get back to this by pressing `Menu → Analytics`.
 
 ![Screenshot 2025-09-01 at 10.29.43.png](../../attachments/7b1e7813-4b76-4a1c-92b4-11f1e6c5ab38.png)
 
@@ -37,10 +37,6 @@ The Dashboard is the first page you see after you successfully sign in.  You ca
 
 The navigation elements in the top toolbar are:
 
-- [Hub: Orders](Hub_%20Orders.md) - once in an environment, records of deliveries/collections to be handled by a driver, typically as part of a route.  Depending on your role, you can list orders, edit them or create new ones.
-- [Hub: Routes](Hub_%20Routes.md)- once in an environment, groups of orders typically handled in a single vehicle trip.  Depending on your role, you can list routes, edit them or create new ones.
-- [Hub: Organization Settings](Hub_%20Organization%20Settings.md) - click to select an organization if you are a member of more than one.  Depending on your role, you can also edit its settings or create a new one.
-- [Hub: Environment Settings](Hub_%20Environment%20Settings.md) - click to select an environment if you are a member of more than one.  Depending on your role, you can also create and edit its settings.  Environments let you represent teams within a single company or provide separate spaces for testing and productive use.
 - Notifications
 - [Support](../Support.md) - click to access documentation, contact Customer Support, request a new feature, or run a user guide on the specific page.
 - [Hub: Profile](Hub_%20Profile.md) - click to view your user profile, manage your personal API access tokens, and sign out.
